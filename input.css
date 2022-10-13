@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 100% -20%;
+}
+
+#cta {
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+/* Hamburger Menu */
+/* .hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(0);
+    transition: all 0.3s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+.hamburger-bottom {
+    transform: translateY(14px);
+} */
+
+/* Creating a class to be called in JS */
+/* .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle {
+    display: none;
+}
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+} */
+
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    content: "";
+    display: none;
+}
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23F25F3A'%2F%3E%3C%2Fsvg%3E") !important;
+    background-size: 20px !important;
+    /* width: 20px !important; */
+    background-repeat: no-repeat;
+    left: 0 !important;
+    top: 60% !important;
+}
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23F25F3A'%2F%3E%3C%2Fsvg%3E") !important;
+    width: 20px !important;
+    background-repeat: no-repeat;
+    right: 0 !important;
+    top: 60% !important;
+}
+/* .swiper-pagination {
+    color: red !important;
+} */
+    .swiper-container-1 {
+        --swiper-theme-color: #F25F3A;
+        --swiper-navigation-color: var(--swiper-theme-color);
+    
+        --swiper-pagination-color: var(--swiper-theme-color);
+        --swiper-pagination-bullet-horizontal-gap: 4px;
+        --swiper-pagination-bullet-vertical-gap: 6px;
+        --swiper-pagination-bullet-size: 8px;
+        --swiper-pagination-bullet-width: 8px;
+        --swiper-pagination-bullet-height: 8px;
+        --swiper-pagination-bullet-opacity: 1;
+        --swiper-pagination-bullet-inactive-color: gray;
+        --swiper-pagination-bullet-inactive-opacity: .2;
+        --swiper-pagination-bullet-horizontal-gap: 4px;
+    
+        --swiper-preloader-color: var(--swiper-theme-color);
+        --swiper-virtual-size: 80px;
+        bottom: -5px !important;
+
+    }
+
+
+
+
+@media (max-width: 576px) {
+    body {
+        background-size: 400px;
+        background-position: 60px -50px;
+        /* background-repeat: repeat-y; */
+    }
+
+    #cta {
+        background-image: url(../images/bg-simplify-section-mobile.svg);
+        /* background-repeat: no-repeat; */
+    }
+}
